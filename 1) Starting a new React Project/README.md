@@ -134,6 +134,14 @@ You can test it right in the App.js by adding attributs (props) to our Cards:
 />
 ```
 
+**ProTip: Center your App layout by using this CSS:**
+```CSS
+ .App {
+     width: 900px;
+     margin: 50px auto;
+ }
+```
+
 #### Next Step
 
 Right now we should have a Card Component that accepts some props and can render on screen. We have just created our first Display Component!
