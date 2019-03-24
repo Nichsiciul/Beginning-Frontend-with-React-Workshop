@@ -9,9 +9,10 @@ Hands-on React workshop going through the basic principles of the React library.
 - JSX
 - Asynchronous setState
 - Component Life Cycle
+- PropTypes
 
 ## Goal
-Creating a list component that gets data from a random API and displays and filters that data.
+Creating a list component that gets data from a random API, displays and filters that data.
 
 ## Prerequisites 
 - [Node](https://nodejs.org/en/) -> Download and install LTS version
