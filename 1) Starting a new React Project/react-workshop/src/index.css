@@ -7,3 +7,9 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

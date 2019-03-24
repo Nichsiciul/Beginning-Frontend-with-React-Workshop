@@ -17,11 +17,11 @@ const ContactCard = (props) => {
             <img src={imageUrl} alt={`${firstName} - ${lastName}`} />
         </div>
         <div className="contact-card-inner">
-            <div className="information-container">
+            <div className="information-container ellipsis">
                 <i className="contact-details-icon" style={genderStyle}></i>
                 <span title={contactDetails}>{contactDetails}</span>
             </div>
-            <div className="email-container">
+            <div className="ellipsis">
                 <i className="contact-details-icon email-icon"></i>
                 <span><a className="contact-email" href={`mailto:${eMail}`}>{eMail}</a></span>   
             </div>

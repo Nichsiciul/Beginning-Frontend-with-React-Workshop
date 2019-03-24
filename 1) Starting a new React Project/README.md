@@ -111,8 +111,16 @@ We need to define the Contact Card of a person, so we should define at least the
 #### Create the layout and styling 
 Let's go ahead and create the layout. Mine looks like this: 
 
-![alt text](../Readme_Images/1_CardFinal.png "Card")
+![Card](../Readme_Images/1_CardFinal.png "Card")
 
+***Be createive here, don't overstress on CSS, make a simple layout***
+
+It can also look like this too:
+![Card 2](../Readme_Images/1_CardSimpleOption.png "Card 2")
+
+***Getting the concept is important, CSS can be learned later***
+
+#### Testing it out
 You can test it right in the App.js by adding attributs (props) to our Cards:
 
 ```html
@@ -125,6 +133,12 @@ You can test it right in the App.js by adding attributs (props) to our Cards:
   imageUrl="https://picsum.photos/200/300"
 />
 ```
+
+#### Next Step
+
+Right now we should have a Card Component that accepts some props and can render on screen. We have just created our first Display Component!
+
+Let's add some state into the mix.
 
 
 
