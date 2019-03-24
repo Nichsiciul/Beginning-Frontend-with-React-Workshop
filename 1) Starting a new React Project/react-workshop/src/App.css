@@ -1,0 +1,8 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 1;
+}

@@ -6,11 +6,50 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
+        <ContactCard
+          firstName="Prenume"
+          lastName="Nume"
+          gender="male"
+          age="24"
+          eMail="prenume.nume@gmail.com"
+          imageUrl="https://picsum.photos/200/300"
+        />
+
+        <ContactCard
+          firstName="Prenume"
+          lastName="Nume"
+          gender="female"
+          age="99"
+          eMail="prenume.nume@gmail.com"
+          imageUrl="https://picsum.photos/300/300"
+        />
+
+        <ContactCard
+          firstName="Prenume"
+          lastName="Nume"
+          gender="male"
+          age="24"
+          eMail="prenume.nume@gmail.com"
+          imageUrl="https://picsum.photos/400/300"
+        />
+
+        <ContactCard
+          firstName="Prenume lung ca deh"
+          lastName="Nume"
+          gender="female"
+          age="90"
+          eMail="prenume.nume@gmail.com"
+          imageUrl="https://picsum.photos/20/40"
+        />
+
+        <ContactCard
+          firstName="Prenume"
+          lastName="Nume"
+          gender="male"
+          age="26"
+          eMail="prenume.nume@gmail.com"
+          imageUrl="https://picsum.photos/40/30"
+        />
       </div>
     );
   }

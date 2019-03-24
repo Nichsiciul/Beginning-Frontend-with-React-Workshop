@@ -109,5 +109,24 @@ We need to define the Contact Card of a person, so we should define at least the
 * imageUrl
 
 #### Create the layout and styling 
-Let's go ahead and create the layout. Mine looks like this: ***Insert Picture***
+Let's go ahead and create the layout. Mine looks like this: 
+
+![alt text](../Readme_Images/1_CardFinal.png "Card")
+
+You can test it right in the App.js by adding attributs (props) to our Cards:
+
+```html
+<ContactCard
+  firstName="Prenume"
+  lastName="Nume"
+  gender="male"
+  age="24"
+  eMail="prenume.nume@gmail.com"
+  imageUrl="https://picsum.photos/200/300"
+/>
+```
+
+
+
+
 
