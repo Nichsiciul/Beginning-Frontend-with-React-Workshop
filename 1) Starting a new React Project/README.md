@@ -113,23 +113,23 @@ Let's go ahead and create the layout. Mine looks like this:
 
 ![Card](../Readme_Images/1_CardFinal.png "Card")
 
-***Be createive here, don't overstress on CSS, make a simple layout***
+***Be creative here, don't overstress on CSS, make a simple layout***
 
 It can also look like this too:
 ![Card 2](../Readme_Images/1_CardSimpleOption.png "Card 2")
 
-***Getting the concept is important, CSS can be learned later***
+***Getting the React concepts are important***
 
 #### Testing it out
-You can test it right in the App.js by adding attributs (props) to our Cards:
+You can test it right in the App.js by adding attributes (props) to our Cards:
 
 ```html
 <ContactCard
-  firstName="Prenume"
-  lastName="Nume"
+  firstName="John"
+  lastName="Doe"
   gender="male"
   age="24"
-  eMail="prenume.nume@gmail.com"
+  eMail="john.doe@gmail.com"
   imageUrl="https://picsum.photos/200/300"
 />
 ```
@@ -147,8 +147,3 @@ You can test it right in the App.js by adding attributs (props) to our Cards:
 Right now we should have a Card Component that accepts some props and can render on screen. We have just created our first Display Component!
 
 Let's add some state into the mix.
-
-
-
-
-
