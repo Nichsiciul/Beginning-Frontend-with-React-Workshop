@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import ContactCard from './components/ContactCard/ContactCard';
+import ContactList from './components/ContactList/ContactList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+
+
+        <ContactList />
+{/*         
         <ContactCard
           firstName="Prenume"
           lastName="Nume"
@@ -49,7 +54,7 @@ class App extends Component {
           age="26"
           eMail="prenume.nume@gmail.com"
           imageUrl="https://picsum.photos/40/30"
-        />
+        /> */}
       </div>
     );
   }
