@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ContactCard from './ContactCard/ContactCard';
+import ContactCard from './components/ContactCard/ContactCard';
 
 class App extends Component {
   render() {
@@ -34,7 +34,7 @@ class App extends Component {
         />
 
         <ContactCard
-          firstName="Prenume lung ca deh"
+          firstName="Prenume lung lung lung lung"
           lastName="Nume"
           gender="female"
           age="90"

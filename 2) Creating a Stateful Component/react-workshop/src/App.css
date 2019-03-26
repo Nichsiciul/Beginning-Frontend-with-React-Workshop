@@ -6,3 +6,7 @@
     margin: 50px auto;
     flex: 1;
 }
+
+.App .contact-card {
+    margin: 10px;
+}
