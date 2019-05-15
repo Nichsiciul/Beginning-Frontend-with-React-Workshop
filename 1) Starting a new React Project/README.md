@@ -142,8 +142,38 @@ You can test it right in the App.js by adding attributes (props) to our Cards:
  }
 ```
 
-#### Next Step
+## Creating a searchbar
 
-Right now we should have a Card Component that accepts some props and can render on screen. We have just created our first Display Component!
+Let's create our SearchBar Component. Like before, create a folder for our new Component. Add a SearchBar.js and SearchBar.css to it. Feel free to style the taskbar as you wish
+Creating this is similar to creating our previous card component, the slight difference is that this one has to react to change. In order to do that we need to pass it 2 things, what text is being rendered and what to do with it.
+
+
+```javascript
+import React from 'react';
+import './SearchBar.css';
+const SearchBar = ({ filterText, onUserInput }) => (
+        <input
+        // add the new value and the change here
+        />);
+
+export default SearchBar;
+```
+
+### Proptypes
+
+Proptypes should be easy or this one, right? So let's add the 2 new fields "filterText" and "onUserInput" to the proptypes of this component as we did previously.
+
+### Testing it out
+Let's test our new component in the App.js file. Add this above the Cards.
+
+```javascript
+ <SearchBar onUserInput={(data) => console.log(data)} filterText={"Sometext"}/>
+```
+
+While you type you should see in the console the letters you are typing if all went well. For now, the change does not happend. That's something for the State to handle.
+
+## Next Step
+
+Right now we should have a Card Component that accepts some props and can render on screen and a SearchBar component that accepts a value and emmits back the change. We have just created our first display components!
 
 Let's add some state into the mix.
