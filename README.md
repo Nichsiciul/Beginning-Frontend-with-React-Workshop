@@ -18,14 +18,14 @@ Creating a list component that gets data from a random API, displays and filters
 - [Node](https://nodejs.org/en/) -> Download and install LTS version
 - [Visual Studio Code](https://code.visualstudio.com/Download)
 - Run "npm install -g create-react-app" in any CLI
+- Run "npm install -g json-server" in any CLI
 
 ## How to follow along
 Workshop is divided in multiple parts
-1) Starting a new React Project
-2) Creating a Stateful Component
-3) Adding Filtering
-4) Linking to a live API
-5) Final Result
+1) Starting a new React project
+2) Creating a stateful component
+3) Adding filtering and inking to a live API
+4) Final Result
 
 Each folder has an associated README.md file with instructions for that specific checkpoint. I will go briefly on what we will going to go through
 
@@ -39,16 +39,11 @@ Contains the result of the previous folder which should contain the structure cr
 The purpose of this checkpoint is creating our first stateful component and understanding the difference between it and our stateless one. 
 Basically, we will create our list wrap component which controls the state of our list
 
-### 3) Adding Filtering
+### 3) Adding Filtering and Linking to a live API
 This checkpoint builds upon the previous one adding some filtering components and seeing how our stateless components work together
-We will create a search component and a radio button component
+We will go through the process of linking to an async API and how to parse the data in order to render them on screen.
 
-
-### 4) Linking to a live API
-We will go through the process of linking to an async API
-Will also go into HOC and how they can come into play to solve some issues that arise.
-
-### 5) Final Result
+### 4) Final Result
 Will contain the final result of what was presented.
 This is just one possible solution, it can be implemented in a lot of different ways.
 

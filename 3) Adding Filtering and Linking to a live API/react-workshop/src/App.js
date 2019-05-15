@@ -1,60 +1,57 @@
 import React, { Component } from 'react';
 import './App.css';
 import ContactCard from './components/ContactCard/ContactCard';
-import ContactList from './components/ContactList/ContactList';
+import SearchBar from './components/SearchBar/SearchBar';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-
-
-        <ContactList />
-{/*         
+        <SearchBar onUserInput={(data) => console.log(data)} filterText={""}/>
         <ContactCard
-          firstName="Prenume"
-          lastName="Nume"
+          firstName="Dominik"
+          lastName="Doe"
           gender="male"
           age="24"
-          eMail="prenume.nume@gmail.com"
+          eMail="Dominik.Doe@gmail.com"
           imageUrl="https://picsum.photos/200/300"
         />
 
         <ContactCard
-          firstName="Prenume"
-          lastName="Nume"
+          firstName="Francesca"
+          lastName="Kale"
           gender="female"
           age="99"
-          eMail="prenume.nume@gmail.com"
+          eMail="Francesca.Kale@gmail.com"
           imageUrl="https://picsum.photos/300/300"
         />
 
         <ContactCard
-          firstName="Prenume"
-          lastName="Nume"
+          firstName="John"
+          lastName="Johnson"
           gender="male"
           age="24"
-          eMail="prenume.nume@gmail.com"
+          eMail="John.Johnson@gmail.com"
           imageUrl="https://picsum.photos/400/300"
         />
 
         <ContactCard
-          firstName="Prenume lung lung lung lung"
-          lastName="Nume"
-          gender="female"
+          firstName="Ferdinand"
+          lastName="The First"
+          gender="male"
           age="90"
-          eMail="prenume.nume@gmail.com"
+          eMail="FerdinandI@gmail.com"
           imageUrl="https://picsum.photos/20/40"
         />
 
         <ContactCard
-          firstName="Prenume"
-          lastName="Nume"
+          firstName="Santiago"
+          lastName="Mauritius"
           gender="male"
           age="26"
-          eMail="prenume.nume@gmail.com"
+          eMail="Dominik.nume@gmail.com"
           imageUrl="https://picsum.photos/40/30"
-        /> */}
+        />
       </div>
     );
   }
