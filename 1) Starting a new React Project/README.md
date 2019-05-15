@@ -170,7 +170,7 @@ Let's test our new component in the App.js file. Add this above the Cards.
  <SearchBar onUserInput={(data) => console.log(data)} filterText={"Sometext"}/>
 ```
 
-While you type you should see in the console the letters you are typing if all went well. For now, the change does not happend. That's something for the State to handle.
+While you type you should see in the console the letters you are typing if all went well. For now, the change does not happen. That's something for the State to handle.
 
 ## Next Step
 
