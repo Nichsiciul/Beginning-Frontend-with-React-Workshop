@@ -97,8 +97,3 @@ handleSubmit = (query) => {
 ## Testing
 
 We should now be able to Search the list of 500 mock elements (the q=) param in the query searches every string in the list of elements. Whenever we press Enter.
-
-
-## Bonus Points
-Add a loader
-Add more filtering (gender?)
