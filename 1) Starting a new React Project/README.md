@@ -103,8 +103,6 @@ ContactCard.propTypes = {
 We need to define the Contact Card of a person, so we should define at least the following: 
 * firstName
 * lastName
-* gender
-* e-mail
 * age
 * imageUrl
 
