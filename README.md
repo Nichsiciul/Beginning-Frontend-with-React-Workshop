@@ -2,7 +2,7 @@
 
 Hands-on React workshop going through the basic principles of the React library. We will go through a few basic topics in the React library
 - Virtual DOM
-- Components (Stateful, Stateless, HOC)
+- Components (Stateful, Stateless)
 - Rendering
 - State
 - Props
