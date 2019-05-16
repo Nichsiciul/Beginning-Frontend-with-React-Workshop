@@ -24,7 +24,7 @@ Creating a list component that gets data from a random API, displays and filters
 Workshop is divided in multiple parts
 1) Starting a new React project
 2) Creating a stateful component
-3) Adding filtering and inking to a live API
+3) Adding filtering and linking to a live API
 4) Final Result
 
 Each folder has an associated README.md file with instructions for that specific checkpoint. I will go briefly on what we will going to go through

@@ -39,6 +39,7 @@
 
 .contact-card-inner > div > span {
     vertical-align: middle;
+    text-transform: capitalize;
 }
 
 .information-container { 

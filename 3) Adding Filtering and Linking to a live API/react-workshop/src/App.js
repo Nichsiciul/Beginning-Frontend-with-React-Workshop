@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
 import ContactCard from './components/ContactCard/ContactCard';
 import SearchBar from './components/SearchBar/SearchBar';
+import ContactList from './components/ContactList/ContactList';
+
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <SearchBar onUserInput={(data) => console.log(data)} filterText={""}/>
+        
+        <ContactList />
+        
+        {/* <SearchBar onUserInput={(data) => console.log(data)} filterText={""}/>
         <ContactCard
           firstName="Dominik"
           lastName="Doe"
@@ -51,7 +56,7 @@ class App extends Component {
           age="26"
           eMail="Dominik.nume@gmail.com"
           imageUrl="https://picsum.photos/40/30"
-        />
+        /> */}
       </div>
     );
   }
