@@ -1,4 +1,4 @@
-# WIP - Beginning Frontend with React Workshop - WIP
+# Beginning Frontend with React Workshop 
 
 Hands-on React workshop going through the basic principles of the React library. We will go through a few basic topics in the React library
 - Virtual DOM
