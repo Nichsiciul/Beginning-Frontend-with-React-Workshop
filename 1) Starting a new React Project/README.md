@@ -2,11 +2,16 @@
 This chapter goes through setting up a new React application and also how to create a few components to set up.
 
 ## Bootstrapping your React app
-Open a CLI, navigate to this file and run the create-react-app CLI tool.
+If you cloned the repository, then you can..
+
+Open a CLI, navigate to this folder and run the create-react-app CLI tool.
 ```bash
 $ cd '.\1) Starting a new React Project\'
 $ create-react-app react-workshop
 ```
+
+If you did not clone the whole repository, then you can run the create-react-app command in any folder you choose. 
+
 This will bootstrap your React application. Name it however you like.
 
 Once completed (it can take 1-2 min) navigate to the folder created and start the application
@@ -84,21 +89,30 @@ Go ahead and update our App.js file to see how our component is rendered on scre
   </div>
 ```
 
+**Don't forget to import the component**
+```javascript
+import ContactCard from './components/ContactCard/ContactCard';
+```
+
 Ok, our component renders on screen now, but it's not really configurable. That's the role of props.
 
 #### Define the props in PropTypes
-Ok, our component is out and rendering, but we can't really do anything with it (except render the same thing over and over again, that's ok too)
+Now that our component is out and rendering, but we can't really do anything with it (except render the same thing over and over again, that's ok too)
 
 [How to use PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) <- detailed explantion
 
 Esentially you define an interface for the props of your component.
 
 ```javascript
+import PropTypes from 'prop-types';
+
 ContactCard.propTypes = {
-  prop1: PropTypes.string,
+  prop1: PropTypes.string.isRequired,
   prop2: PropTypes.number
 }
 ```
+
+Proptypes is an interface like component that attaches to the Class and it gives you hints if you forgot something that is required or if you expect a different type.
 
 We need to define the Contact Card of a person, so we should define at least the following: 
 * firstName
@@ -151,7 +165,11 @@ import React from 'react';
 import './SearchBar.css';
 const SearchBar = ({ filterText, onUserInput }) => (
         <input
-        // add the new value and the change here
+          onChange={(event) => {
+            // call "onUserInput" with the new value
+            // the typed value can be retrieved like this "event.target.value"
+          }}
+          // set filterText value to input value
         />);
 
 export default SearchBar;
@@ -159,7 +177,7 @@ export default SearchBar;
 
 ### Proptypes
 
-Proptypes should be easy or this one, right? So let's add the 2 new fields "filterText" and "onUserInput" to the proptypes of this component as we did previously.
+Proptypes should be easy on this one, right? So let's add the 2 new fields "filterText" and "onUserInput" to the proptypes of this component as we did previously.
 
 ### Testing it out
 Let's test our new component in the App.js file. Add this above the Cards.

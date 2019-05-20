@@ -65,16 +65,17 @@ class ContactList extends Component {
     }
 
     render() {
-        const { loaded } = this.state;
+        const { loaded, query, contacts } = this.state;
         return <div className="contact-list">
             <SearchBar
-                filterText={this.state.query}
+                filterText={query}
                 onUserInput={this.handleSearch}
                 onSubmit={this.handleSubmit}
             />
+
             {!loaded ?
                 <div>Loading...</div> :
-                this.renderContacts(this.state.contacts)
+                this.renderContacts(contacts)
             }
 
         </div>

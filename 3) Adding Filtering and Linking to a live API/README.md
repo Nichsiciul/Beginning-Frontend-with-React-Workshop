@@ -67,6 +67,7 @@ componentDidMount() {
 
 Let's add filtering in the mix. We would like to filter the results when pressing Enter. To do that we need to modify the SearchComponent
 It should accept a new property onSubmit which is a function passed down from the stateful component.
+
 Next we need to handle just the Enter key using a new handleEnter function like so:
 ```javascript
 onKeyPress={event => handleEnter(event, onSubmit)}
@@ -91,7 +92,7 @@ handleSubmit = (query) => {
 }
 ```
 
-*Remember to also use the new prop in the SearchBar in our render method*
+*Remember to also use the new prop in the SearchBar in our render method and in our proptypes*
 
 
 ## Testing

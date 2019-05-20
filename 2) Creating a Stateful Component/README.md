@@ -32,7 +32,10 @@ First of all let's remove our testing data from App.js
 Remove the SearchBar and the ContactCards components and add our new ContactList to app and check out if we see it on the browser
 
 ## Getting data
-Let's get some mock data from our new mockData.json file in the src folder
+Get the mockData.json file (that is on the Resources folder in the repo). Add the file to the src folder inside the React application.
+
+Let's get some mock data from our new mockData.json file we just added in the src folder.
+
 This is just for testing out our state, real data will come from an API but until then we can simply mock it with adding 
 
 ```javascript
@@ -45,6 +48,7 @@ Now we have the list of contacts to render on screen! But first... a little bit 
 
 ## Adding state
 State is used to save data that changes, so when that data changes something on the screen changes too. What elements can change on a list that is being searched upon ? 
+
 I'm going to say that the data changes and the query changes so let's add state into the mix
 
 ### Adding an initial state
