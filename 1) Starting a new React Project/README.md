@@ -7,7 +7,7 @@ If you cloned the repository, then you can..
 Open a CLI, navigate to this folder and run the create-react-app CLI tool.
 ```bash
 $ cd '.\1) Starting a new React Project\'
-$ create-react-app react-workshop
+$ npx create-react-app react-workshop
 ```
 
 If you did not clone the whole repository, then you can run the create-react-app command in any folder you choose. 
